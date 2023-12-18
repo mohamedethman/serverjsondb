@@ -1,0 +1,175 @@
+{
+    "user": [
+      {
+        "id": "admin",
+        "name": "Win Services Tech",
+        "password": "Test$1234",
+        "email": "test@gmail.com",
+        "gender": "male",
+        "role": "admin",
+        "isactive": true,
+        "address": {
+          "area": "Nouakchott"
+        }
+      },
+      {
+        "id": "testuser",
+        "name": "Test User",
+        "password": "Test@1234",
+        "email": "test@in.com",
+        "gender": "male",
+        "role": "user",
+        "isactive": true
+      },
+      {
+        "id": "Mohamed",
+        "name": "NT Infotech",
+        "password": "Test@1233",
+        "email": "te@in.com",
+        "gender": "male",
+        "role": "tech",
+        "isactive": true,
+        "address": {
+          "area": "chennai"
+        }
+      },
+      {
+        "id": "Aberrahman",
+        "name": "Aberrahman",
+        "password": "Test@1234",
+        "email": "te@in.com",
+        "gender": "male",
+        "role": "tech",
+        "isactive": true,
+        "address": {
+          "area": "banglore"
+        }
+      }
+    ],
+    "role": [
+      {
+        "code": "user",
+        "name": "User"
+      },
+      {
+        "code": "tech",
+        "name": "Technician"
+      }
+    ],
+    "menu": [
+      {
+        "code": "user",
+        "name": "User"
+      },
+      {
+        "code": "customer",
+        "name": "Customer"
+      }
+    ],
+    "roleaccess": [
+      {
+        "role": "admin",
+        "menu": "user",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "admin",
+        "menu": "typecarnet",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "admin",
+        "menu": "soute",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "admin",
+        "menu": "typeingredient",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "user",
+        "menu": "soute",
+        "haveedit": false,
+        "haveadd": false,
+        "havedelete": false
+      },
+      {
+        "role": "user",
+        "menu": "typecarnet",
+        "haveedit": false,
+        "haveadd": false,
+        "havedelete": false
+      },
+      {
+        "role": "user",
+        "menu": "user",
+        "haveedit": false,
+        "haveadd": false,
+        "havedelete": false
+      }
+    ],
+    "typecarnet": [
+      {
+        "id": 1,
+        "name": "10 litres",
+        "Creditlimit": 10
+      },
+      {
+        "id": 2,
+        "name": "20 litres",
+        "Creditlimit": 20
+      },
+      {
+        "id": 3,
+        "name": "30 litres",
+        "Creditlimit": 30
+      }
+    ],
+    "soute": [
+      {
+        "id": 1,
+        "soute": "soute 7",
+        "formation": "7RM"
+      },
+      {
+        "id": 2,
+        "soute": "soute 1",
+        "formation": "1RM"
+      }
+    ],
+    "typeingredient": [
+      {
+        "id": 1,
+        "typeingredient": "Essence"
+      },
+      {
+        "id": 2,
+        "typeingredient": "Gasoile"
+      },
+      {
+        "typeingredient": "sff",
+        "id": 3
+      },
+      {
+        "typeingredient": "er",
+        "id": 4
+      },
+      {
+        "typeingredient": "1",
+        "id": 5
+      },
+      {
+        "typeingredient": "sd",
+        "id": 6
+      }
+    ]
+  }
