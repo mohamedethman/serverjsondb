@@ -120,18 +120,18 @@
     "typecarnet": [
       {
         "id": 1,
-        "name": "10 litres",
-        "Creditlimit": 10
+        "typecarnet": "10 litres",
+        "quantite": 10
       },
       {
         "id": 2,
-        "name": "20 litres",
-        "Creditlimit": 20
+        "typecarnet": "20 litres",
+        "quantite": 20
       },
       {
         "id": 3,
-        "name": "30 litres",
-        "Creditlimit": 30
+        "typecarnet": "30 litres",
+        "quantite": 30
       }
     ],
     "soute": [
