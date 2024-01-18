@@ -1,175 +1,398 @@
 {
-    "user": [
-      {
-        "id": "admin",
-        "name": "Win Services Tech",
-        "password": "Test$1234",
-        "email": "test@gmail.com",
-        "gender": "male",
-        "role": "admin",
-        "isactive": true,
-        "address": {
-          "area": "Nouakchott"
+  "user": [
+    {
+      "id": "admin",
+      "name": "Win Services Tech",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "Nouakchott"
+      }
+    },
+    {
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": false
+    },
+    {
+      "id": "Mohamed",
+      "name": "NT Infotech",
+      "password": "Test@1233",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": false
+    },
+    {
+      "id": "Aberrahman",
+      "name": "Aberrahman",
+      "password": "Test@1234",
+      "email": "te@in.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "banglore"
+      }
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "typecarnet",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "soute",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "typeingredient",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "soute",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "typecarnet",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    }
+  ],
+  "typecarnet": [
+    {
+      "id": 2,
+      "typecarnet": "20 litres",
+      "quantite": 20
+    },
+    {
+      "id": 3,
+      "typecarnet": "30 litres",
+      "quantite": 30
+    }
+  ],
+  "soute": [
+    {
+      "id": 1,
+      "soute": "soute 7",
+      "idFormation": 1
+    },
+    {
+      "id": 2,
+      "soute": "soute 1",
+      "idFormation": 2
+    },
+    {
+      "id": 3,
+      "soute": "soute test",
+      "idFormation": 3
+    },
+    {
+      "id": 4,
+      "soute": "sd",
+      "idFormation": 2
+    },
+    {
+      "id": 5,
+      "soute": "xs",
+      "idFormation": 1
+    },
+    {
+      "id": 6,
+      "soute": "ss",
+      "idFormation": 3
+    },
+    {
+      "id": 7,
+      "soute": "qq",
+      "idFormation": 2
+    },
+    {
+      "id": 8,
+      "soute": "a",
+      "idFormation": 2
+    },
+    {
+      "id": 9,
+      "soute": "PPPP",
+      "idFormation": 3
+    }
+  ],
+  "Formation": [
+    {
+      "id": 1,
+      "label": "7RM"
+    },
+    {
+      "id": 2,
+      "label": "1RM"
+    },
+    {
+      "id": 3,
+      "label": "callibre"
+    }
+  ],
+  "Factures": [
+    {
+      "id": 1,
+      "numero": "2023AA22",
+      "idBonDecommande": 3,
+      "fournisseur": "aa",
+      "typemarcheId": 1,
+      "referenceOrdre": "3"
+    }
+  ],
+  "bonDecommande": [
+    {
+      "id": 3,
+      "isValid": false,
+      "Montant": 2,
+      "numeroBonDecommande": "238FB21",
+      "Date": "2023-12-27T11:51:40.852Z",
+      "typeingredient": [
+        {
+          "typeingredientId": 2,
+          "quantite": 1,
+          "prixUnitaire": 1,
+          "UniteId": 1
+        },
+        {
+          "typeingredientId": 1,
+          "quantite": 1,
+          "prixUnitaire": 1,
+          "UniteId": 1
         }
-      },
-      {
-        "id": "testuser",
-        "name": "Test User",
-        "password": "Test@1234",
-        "email": "test@in.com",
-        "gender": "male",
-        "role": "user",
-        "isactive": true
-      },
-      {
-        "id": "Mohamed",
-        "name": "NT Infotech",
-        "password": "Test@1233",
-        "email": "te@in.com",
-        "gender": "male",
-        "role": "tech",
-        "isactive": true,
-        "address": {
-          "area": "chennai"
+      ]
+    },
+    {
+      "isValid": false,
+      "Montant": 0,
+      "numeroBonDecommande": "Dir2024000002",
+      "Date": "2024-01-12T02:40:19.920Z",
+      "typeingredient": [
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
         }
-      },
-      {
-        "id": "Aberrahman",
-        "name": "Aberrahman",
-        "password": "Test@1234",
-        "email": "te@in.com",
-        "gender": "male",
-        "role": "tech",
-        "isactive": true,
-        "address": {
-          "area": "banglore"
+      ],
+      "id": 4
+    },
+    {
+      "isValid": false,
+      "Montant": 0,
+      "numeroBonDecommande": "Dir2024000005",
+      "Date": "2024-01-14T02:56:07.146Z",
+      "typeingredient": [
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        },
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        },
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        },
+        {
+          "quantite": 55,
+          "prixUnitaire": 4
         }
-      }
-    ],
-    "role": [
-      {
-        "code": "user",
-        "name": "User"
-      },
-      {
-        "code": "tech",
-        "name": "Technician"
-      }
-    ],
-    "menu": [
-      {
-        "code": "user",
-        "name": "User"
-      },
-      {
-        "code": "customer",
-        "name": "Customer"
-      }
-    ],
-    "roleaccess": [
-      {
-        "role": "admin",
-        "menu": "user",
-        "haveedit": true,
-        "haveadd": true,
-        "havedelete": true
-      },
-      {
-        "role": "admin",
-        "menu": "typecarnet",
-        "haveedit": true,
-        "haveadd": true,
-        "havedelete": true
-      },
-      {
-        "role": "admin",
-        "menu": "soute",
-        "haveedit": true,
-        "haveadd": true,
-        "havedelete": true
-      },
-      {
-        "role": "admin",
-        "menu": "typeingredient",
-        "haveedit": true,
-        "haveadd": true,
-        "havedelete": true
-      },
-      {
-        "role": "user",
-        "menu": "soute",
-        "haveedit": false,
-        "haveadd": false,
-        "havedelete": false
-      },
-      {
-        "role": "user",
-        "menu": "typecarnet",
-        "haveedit": false,
-        "haveadd": false,
-        "havedelete": false
-      },
-      {
-        "role": "user",
-        "menu": "user",
-        "haveedit": false,
-        "haveadd": false,
-        "havedelete": false
-      }
-    ],
-    "typecarnet": [
-      {
-        "id": 1,
-        "typecarnet": "10 litres",
-        "quantite": 10
-      },
-      {
-        "id": 2,
-        "typecarnet": "20 litres",
-        "quantite": 20
-      },
-      {
-        "id": 3,
-        "typecarnet": "30 litres",
-        "quantite": 30
-      }
-    ],
-    "soute": [
-      {
-        "id": 1,
-        "soute": "soute 7",
-        "formation": "7RM"
-      },
-      {
-        "id": 2,
-        "soute": "soute 1",
-        "formation": "1RM"
-      }
-    ],
-    "typeingredient": [
-      {
-        "id": 1,
-        "typeingredient": "Essence"
-      },
-      {
-        "id": 2,
-        "typeingredient": "Gasoile"
-      },
-      {
-        "typeingredient": "sff",
-        "id": 3
-      },
-      {
-        "typeingredient": "er",
-        "id": 4
-      },
-      {
-        "typeingredient": "1",
-        "id": 5
-      },
-      {
-        "typeingredient": "sd",
-        "id": 6
-      }
-    ]
-  }
+      ],
+      "id": 5
+    },
+    {
+      "isValid": false,
+      "Montant": 0,
+      "numeroBonDecommande": "Dir2024000002",
+      "Date": "2024-01-16T13:28:45.987Z",
+      "typeingredient": [
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        }
+      ],
+      "id": 6
+    },
+    {
+      "isValid": false,
+      "Montant": 0,
+      "numeroBonDecommande": "Dir2024000003",
+      "Date": "2024-01-16T14:46:05.260Z",
+      "typeingredient": [
+        {
+          "quantite": 3,
+          "prixUnitaire": 1
+        },
+        {
+          "quantite": 1,
+          "prixUnitaire": 2
+        }
+      ],
+      "id": 7
+    },
+    {
+      "isValid": false,
+      "Montant": 2,
+      "numeroBonDecommande": "Dir2024000003",
+      "Date": "2024-01-16T14:52:12.000Z",
+      "typeingredient": [
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        },
+        {
+          "quantite": 1,
+          "prixUnitaire": 1
+        }
+      ],
+      "id": 8
+    },
+    {
+      "isValid": false,
+      "Montant": 52,
+      "numeroBonDecommande": "Dir2024000003",
+      "Date": "2024-01-16T14:53:16.782Z",
+      "typeingredient": [
+        {
+          "quantite": 7,
+          "prixUnitaire": 6
+        },
+        {
+          "quantite": 5,
+          "prixUnitaire": 2
+        }
+      ],
+      "id": 9
+    },
+    {
+      "isValid": false,
+      "Montant": 8,
+      "numeroBonDecommande": "Dir2024000002",
+      "Date": "2024-01-17T23:22:20.928Z",
+      "typeingredient": [
+        {
+          "quantite": 4,
+          "prixUnitaire": 2
+        }
+      ],
+      "id": 10
+    },
+    {
+      "fournisseur": "z",
+      "isValid": false,
+      "Montant": 2,
+      "numeroBonDecommande": "Dir2024000002",
+      "Date": "2024-01-17T23:55:00.549Z",
+      "typeingredient": [
+        {
+          "quantite": 1,
+          "prixUnitaire": 2
+        }
+      ],
+      "id": 11
+    }
+  ],
+  "Typemarche": [
+    {
+      "id": 1,
+      "label": "Simple Facture"
+    }
+  ],
+  "Unite": [
+    {
+      "id": 1,
+      "label": "kg"
+    },
+    {
+      "id": 2,
+      "label": "Litre"
+    }
+  ],
+  "typeingredient": [
+    {
+      "id": 1,
+      "typeingredient": "Essence"
+    },
+    {
+      "id": 2,
+      "typeingredient": "Gasoile"
+    },
+    {
+      "typeingredient": "sff",
+      "id": 3
+    },
+    {
+      "typeingredient": "er",
+      "id": 4
+    },
+    {
+      "typeingredient": "1",
+      "id": 5
+    },
+    {
+      "typeingredient": "sd",
+      "id": 6
+    },
+    {
+      "typeingredient": "sd",
+      "id": 7
+    }
+  ]
+}
